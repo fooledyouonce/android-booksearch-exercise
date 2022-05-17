@@ -1,6 +1,8 @@
 package com.codepath.android.booksearch.activities;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,6 +25,9 @@ public class BookDetailActivity extends AppCompatActivity {
         ivBookCover = (ImageView) findViewById(R.id.ivBookCover);
         tvTitle = (TextView) findViewById(R.id.tvTitle);
         tvAuthor = (TextView) findViewById(R.id.tvAuthor);
+
+        //ActionBar actionBar = getSupportActionBar(); // or getActionBar();
+        //getSupportActionBar().setTitle(); // set the top title
 
         // Extract book object from intent extras
 
